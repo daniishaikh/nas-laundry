@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaPure | Premium Eco-Laundry & Dry Cleaners</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            },
+            aqua: {
+              300: '#5eead4',
+              400: '#2dd4bf',
+              500: '#14b8a6',
+              600: '#0d9488',
+            },
+            whatsapp: {
+              50: '#f0fdf4',
+              500: '#25D366',
+              600: '#1da851',
+              700: '#15803d',
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+          },
+          animation: {
+            'float-bubble': 'bubbleFloat 9s ease-in-out infinite',
+            'float-bubble-delayed': 'bubbleFloat 12s ease-in-out 3s infinite',
+            'pulse-subtle': 'pulseSubtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            bubbleFloat: {
+              '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+              '50%': { transform: 'translateY(-22px) rotate(8deg)' },
+            },
+            pulseSubtle: {
+              '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+              '50%': { opacity: '0.85', transform: 'scale(1.03)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Custom refined bubble background decorations */
+    .bubble-deco {
+      position: absolute;
+      border-radius: 9999px;
+      background: radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.85), rgba(56, 189, 248, 0.2) 65%, rgba(14, 165, 233, 0.35));
+      box-shadow: inset 0 2px 7px rgba(255, 255, 255, 0.9), 0 10px 25px rgba(14, 165, 233, 0.12);
+      pointer-events: none;
+    }
+    /* Subtle scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f8fafc;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 8px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white font-sans overflow-x-hidden">
+
+  <!-- Top Notification Bar -->
+  <div class="bg-gradient-to-r from-brand-900 via-brand-800 to-slate-900 text-white text-xs py-2.5 px-4 font-medium border-b border-brand-800/40">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-aqua-400 text-brand-950 text-[10px] font-black">✓</span>
+        <span>Free Doorstep Pickup & Delivery across Metro City within 6km!</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-200">
+        <span class="hidden md:flex items-center gap-1.5"><i data-lucide="clock" class="w-3.5 h-3.5 text-aqua-400"></i> Open Mon-Sat: 7:30 AM – 9:00 PM</span>
+        <span>•</span>
+        <a href="https://wa.me/1234567890?text=Hi%20AquaPure,%20I%20have%20a%20question%20about%20your%20laundry%20service." target="_blank" class="hover:text-aqua-300 font-bold flex items-center gap-1 text-white">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 text-whatsapp-500 fill-whatsapp-500"></i>
+          WhatsApp Support Online
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="relative w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-600 via-brand-500 to-aqua-400 text-white flex items-center justify-center shadow-lg shadow-brand-500/25 transition-transform group-hover:scale-105">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+            <span class="absolute -top-1 -right-1 w-3 h-3 bg-aqua-300 rounded-full border-2 border-white"></span>
+          </div>
+          <div>
+            <div class="font-extrabold text-xl sm:text-2xl tracking-tight text-slate-900 leading-none">
+              Aqua<span class="text-brand-600">Pure</span>
+            </div>
+            <span class="text-[10px] font-bold tracking-widest text-slate-400 uppercase">Eco Laundry & Dry Clean</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+          <a href="#services" class="hover:text-brand-600 transition-colors">Services</a>
+          <a href="#pricing-calculator" class="hover:text-brand-600 transition-colors">Price Estimator</a>
+          <a href="#location" class="hover:text-brand-600 transition-colors">Location & Hours</a>
+          <a href="#why-us" class="hover:text-brand-600 transition-colors">Why AquaPure</a>
+          <a href="#faq" class="hover:text-brand-600 transition-colors">FAQ</a>
+        </nav>
+
+        <!-- Right Header Action CTAs -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="tel:+1234567890" class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-bold text-slate-700 hover:text-brand-600 hover:bg-slate-100 transition">
+            <i data-lucide="phone" class="w-4 h-4 text-brand-600"></i>
+            <span>(800) 555-WASH</span>
+          </a>
+          <a href="#pricing-calculator" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-brand-600 hover:bg-brand-700 shadow-md shadow-brand-600/20 active:scale-95 transition-all">
+            <i data-lucide="calculator" class="w-4 h-4"></i>
+            <span>Estimate & Order</span>
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobileMenuBtn" aria-label="Toggle Menu" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 transition">
+          <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-100 bg-white px-4 pt-3 pb-6 space-y-3 shadow-xl">
+      <a href="#services" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-50">Our Services</a>
+      <a href="#pricing-calculator" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-50">Live Price Estimator</a>
+      <a href="#location" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-50">Store Location & Delivery Areas</a>
+      <a href="#why-us" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-50">Why Choose Us</a>
+      <a href="#faq" class="mobile-nav-link block px-3 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-50">Frequently Asked Questions</a>
+      <div class="pt-2 flex flex-col gap-2">
+        <button onclick="sendDirectWhatsAppGeneral()" class="w-full py-3 rounded-xl bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-bold text-sm flex items-center justify-center gap-2 shadow">
+          <i data-lucide="message-circle" class="w-5 h-5 fill-white text-whatsapp-500"></i>
+          <span>Direct WhatsApp Message</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 bg-gradient-to-b from-brand-50/70 via-white to-slate-50">
+    <!-- Bubble Decorations -->
+    <div class="bubble-deco w-32 h-32 top-8 left-[6%] opacity-60 animate-float-bubble"></div>
+    <div class="bubble-deco w-20 h-20 top-44 right-[8%] opacity-50 animate-float-bubble-delayed"></div>
+    <div class="bubble-deco w-14 h-14 bottom-14 left-[20%] opacity-40 animate-float-bubble"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/90 text-brand-700 text-xs font-extrabold uppercase tracking-wide shadow-sm">
+            <i data-lucide="leaf" class="w-3.5 h-3.5 text-aqua-600"></i>
+            100% Non-Toxic • Gentle Fabric Care
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12]">
+            Crisp, Spotless Laundry <br class="hidden sm:inline">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-brand-500 to-aqua-500">
+              Ordered in Seconds
+            </span> on WhatsApp.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            No complex signups or payment gateway friction. Calculate your clothes estimate, hit one button, and chat directly with our team to arrange instant doorstep pickup!
+          </p>
+
+          <!-- Hero Action CTAs -->
+          <div class="flex flex-col sm:flex-row gap-3.5 justify-center lg:justify-start pt-2">
+            <a href="#pricing-calculator" class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-2xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-xl shadow-brand-500/25 transition active:scale-95">
+              <i data-lucide="calculator" class="w-4 h-4"></i>
+              <span>Estimate & Order</span>
+            </a>
+            <button onclick="sendDirectWhatsAppGeneral()" class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-lg shadow-emerald-600/20 transition active:scale-95">
+              <i data-lucide="message-circle" class="w-4 h-4 fill-white text-emerald-600"></i>
+              <span>Chat on WhatsApp</span>
+            </button>
+            <a href="#location" class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 font-bold text-sm transition">
+              <i data-lucide="map-pin" class="w-4 h-4 text-brand-600"></i>
+              <span>Visit Store</span>
+            </a>
+          </div>
+
+          <!-- Feature Metric Highlights -->
+          <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-200/70 max-w-lg mx-auto lg:mx-0">
+            <div>
+              <div class="text-2xl font-black text-slate-900">24-48h</div>
+              <div class="text-xs text-slate-500 font-medium">Standard Turnaround</div>
+            </div>
+            <div>
+              <div class="text-2xl font-black text-brand-600">Free</div>
+              <div class="text-xs text-slate-500 font-medium">Pickup & Delivery (6km)</div>
+            </div>
+            <div>
+              <div class="text-2xl font-black text-aqua-600">5,000+</div>
+              <div class="text-xs text-slate-500 font-medium">Delighted Customers</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Interactive Display Card -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div class="w-full max-w-md relative">
+            <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-brand-400 to-aqua-400 opacity-20 blur-xl"></div>
+            
+            <div class="relative bg-white rounded-3xl p-6 sm:p-7 shadow-2xl border border-slate-100">
+              
+              <!-- Quick Info Badge -->
+              <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center">
+                    <i data-lucide="truck" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-slate-900 text-sm">Doorstep Express Route</h3>
+                    <p class="text-xs text-slate-400">Drivers active today</p>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-600 border border-emerald-200">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                  Open Today
+                </span>
+              </div>
+
+              <!-- Workflow Showcase -->
+              <div class="py-5 space-y-3.5">
+                <div class="flex items-center gap-3.5 p-3 rounded-2xl bg-slate-50 border border-slate-100">
+                  <span class="w-7 h-7 rounded-lg bg-brand-600 text-white font-black text-xs flex items-center justify-center shrink-0">1</span>
+                  <div class="text-xs">
+                    <strong class="text-slate-800">Select items in Estimator:</strong>
+                    <p class="text-slate-500">Pick everyday clothes, suits, bedspreads.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3.5 p-3 rounded-2xl bg-slate-50 border border-slate-100">
+                  <span class="w-7 h-7 rounded-lg bg-brand-600 text-white font-black text-xs flex items-center justify-center shrink-0">2</span>
+                  <div class="text-xs">
+                    <strong class="text-slate-800">Click "Order via WhatsApp":</strong>
+                    <p class="text-slate-500">Your basket items format into a chat automatically.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3.5 p-3 rounded-2xl bg-slate-50 border border-slate-100">
+                  <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white font-black text-xs flex items-center justify-center shrink-0">3</span>
+                  <div class="text-xs">
+                    <strong class="text-slate-800">Confirm pickup time & address:</strong>
+                    <p class="text-slate-500">Driver picks up your bag. Pay upon delivery!</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom WhatsApp trigger -->
+              <button onclick="document.getElementById('pricing-calculator').scrollIntoView({ behavior: 'smooth' })" class="w-full py-3.5 rounded-2xl bg-gradient-to-r from-brand-600 to-aqua-500 hover:from-brand-700 hover:to-aqua-600 text-white font-bold text-sm shadow-md transition flex items-center justify-center gap-2">
+                <span>Start Price Calculation</span>
+                <i data-lucide="arrow-down" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-20 bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest bg-brand-50 px-3.5 py-1.5 rounded-full">Our Professional Services</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Caring for Every Fiber</h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">Hospital-grade hygiene, hypoallergenic plant detergents, and artisan fabric finishing.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Service Card 1: Wash & Fold -->
+        <div class="bg-slate-50 hover:bg-white rounded-3xl p-6 border border-slate-200/80 hover:border-brand-300 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-13 h-13 p-3.5 rounded-2xl bg-blue-100 text-brand-600 inline-block mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="shirt" class="w-7 h-7"></i>
+            </div>
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="text-lg font-bold text-slate-900">Wash & Fold</h3>
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded-md bg-blue-50 text-brand-600">24 Hours</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed mb-5">
+              Daily casual clothes, t-shirts, workout outfits, and socks. Separated by colors and fabric sensitivity, washed in pure water, and neatly packaged.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Free fabric conditioner</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Paired sock guarantee</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> From $2.20 / lb (or kg)</li>
+            </ul>
+          </div>
+          <button onclick="selectCategoryTab('wash_fold')" class="text-xs font-bold text-brand-600 group-hover:text-brand-700 inline-flex items-center gap-1">
+            Calculate Estimate <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+        <!-- Service Card 2: Eco Dry Clean -->
+        <div class="bg-slate-50 hover:bg-white rounded-3xl p-6 border border-slate-200/80 hover:border-brand-300 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-13 h-13 p-3.5 rounded-2xl bg-teal-100 text-teal-600 inline-block mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="sparkles" class="w-7 h-7"></i>
+            </div>
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="text-lg font-bold text-slate-900">Eco Dry Clean</h3>
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded-md bg-teal-50 text-teal-700">48 Hours</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed mb-5">
+              100% PERC-free liquid silicone method. Gentle on silks, cashmeres, business blazers, and evening wear with zero pungent chemical odor.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Odorless & fiber nourishing</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Hand stain spotting</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Custom wooden hangers</li>
+            </ul>
+          </div>
+          <button onclick="selectCategoryTab('dry_clean')" class="text-xs font-bold text-brand-600 group-hover:text-brand-700 inline-flex items-center gap-1">
+            Calculate Estimate <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+        <!-- Service Card 3: Steam Pressing -->
+        <div class="bg-slate-50 hover:bg-white rounded-3xl p-6 border border-slate-200/80 hover:border-brand-300 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-13 h-13 p-3.5 rounded-2xl bg-amber-100 text-amber-600 inline-block mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="flame" class="w-7 h-7"></i>
+            </div>
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="text-lg font-bold text-slate-900">Steam Press</h3>
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded-md bg-amber-50 text-amber-700">Same-Day / 24h</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed mb-5">
+              High-pressure industrial steam iron eliminates wrinkles, sanitizes microbes, and restores pristine cuffs, collars, and trouser pleats.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Crisp collar stays</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Starch level to your liking</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Breathable garment covers</li>
+            </ul>
+          </div>
+          <button onclick="selectCategoryTab('iron_press')" class="text-xs font-bold text-brand-600 group-hover:text-brand-700 inline-flex items-center gap-1">
+            Calculate Estimate <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+        <!-- Service Card 4: Bulky Bedding -->
+        <div class="bg-slate-50 hover:bg-white rounded-3xl p-6 border border-slate-200/80 hover:border-brand-300 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-13 h-13 p-3.5 rounded-2xl bg-indigo-100 text-indigo-600 inline-block mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="bed" class="w-7 h-7"></i>
+            </div>
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="text-lg font-bold text-slate-900">Bedding & Duvets</h3>
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded-md bg-indigo-50 text-indigo-700">48 Hours</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed mb-5">
+              Oversized drums designed to fluff down duvets, heavy quilts, wool blankets, and blackout drapes without bunching or clumping.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-2 mb-6">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Anti-dust mite sanitization</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Fluff restoration cycle</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Dust-free packaging</li>
+            </ul>
+          </div>
+          <button onclick="selectCategoryTab('bedding')" class="text-xs font-bold text-brand-600 group-hover:text-brand-700 inline-flex items-center gap-1">
+            Calculate Estimate <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing-calculator" class="py-20 bg-slate-50 border-t border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest bg-brand-100 px-3.5 py-1.5 rounded-full">Interactive Cost Estimator</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Estimate Your Laundry Bill</h2>
+        <p class="text-slate-600 text-sm mt-2">Adjust items below to calculate your estimated cost. When you're ready, hit order to send this exact basket straight to our team on WhatsApp!</p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left: Categories and Item Modifiers -->
+        <div class="lg:col-span-8 bg-white border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-sm">
+          
+          <!-- Category Tabs -->
+          <div class="flex flex-wrap gap-2 pb-6 border-b border-slate-100">
+            <button onclick="switchCategory('wash_fold')" id="tab-wash_fold" class="category-btn active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition bg-brand-600 text-white shadow-sm">
+              Wash & Fold
+            </button>
+            <button onclick="switchCategory('dry_clean')" id="tab-dry_clean" class="category-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition text-slate-600 hover:bg-slate-100">
+              Eco Dry Cleaning
+            </button>
+            <button onclick="switchCategory('iron_press')" id="tab-iron_press" class="category-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition text-slate-600 hover:bg-slate-100">
+              Steam Press Only
+            </button>
+            <button onclick="switchCategory('bedding')" id="tab-bedding" class="category-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition text-slate-600 hover:bg-slate-100">
+              Bulky Bedding & Linen
+            </button>
+          </div>
+
+          <!-- Active Category Item List -->
+          <div id="calculatorItemsList" class="divide-y divide-slate-100 min-h-[300px] mt-2">
+            <!-- Populated dynamically via JS -->
+          </div>
+
+          <!-- Reset Action -->
+          <div class="pt-4 flex justify-between items-center text-xs text-slate-400">
+            <span>* Final weight/fabric audit confirmed upon pickup</span>
+            <button onclick="resetCalculatorCart()" class="text-brand-600 hover:text-brand-800 font-bold underline">Clear All Items</button>
+          </div>
+        </div>
+
+        <!-- Right: Real-time Order Breakdown & WhatsApp Trigger -->
+        <div class="lg:col-span-4 sticky top-24">
+          <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-7 shadow-xl shadow-slate-200/60">
+            
+            <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+              <h3 class="font-extrabold text-slate-900 text-lg flex items-center gap-2">
+                <i data-lucide="shopping-bag" class="w-5 h-5 text-brand-600"></i>
+                Estimated Bill
+              </h3>
+              <span id="badgeItemCount" class="text-xs font-bold px-2.5 py-1 bg-brand-50 text-brand-700 rounded-full">
+                0 items
+              </span>
+            </div>
+
+            <!-- Itemized List Summary -->
+            <div id="cartSummaryContainer" class="my-5 max-h-56 overflow-y-auto space-y-2 pr-1 text-xs text-slate-600">
+              <p class="text-slate-400 italic text-center py-6">Your order is empty. Select items to see your estimate.</p>
+            </div>
+
+            <!-- Express Delivery Toggle Option -->
+            <label class="flex items-center justify-between p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 cursor-pointer select-none mb-4 hover:bg-slate-100/70 transition">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center">
+                  <i data-lucide="zap" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <div class="text-xs font-bold text-slate-800">Express Priority (+25%)</div>
+                  <div class="text-[11px] text-slate-400">Same-Day / Next-Morning</div>
+                </div>
+              </div>
+              <input type="checkbox" id="expressToggle" onchange="toggleExpressService()" class="w-4 h-4 rounded text-brand-600 focus:ring-brand-500 cursor-pointer">
+            </label>
+
+            <!-- Price Breakdown Calculation -->
+            <div class="space-y-2 pt-3 border-t border-slate-100 text-xs text-slate-600 font-medium">
+              <div class="flex justify-between">
+                <span>Items Subtotal:</span>
+                <span id="labelSubtotal" class="font-bold text-slate-900">$0.00</span>
+              </div>
+              <div class="flex justify-between" id="expressFeeRow" style="display: none;">
+                <span class="text-amber-600">Express Rush (25%):</span>
+                <span id="labelExpressFee" class="font-bold text-amber-600">+$0.00</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Doorstep Pickup & Delivery:</span>
+                <span class="font-bold text-emerald-600 uppercase">Free (within 6km)</span>
+              </div>
+              <div class="flex justify-between text-base font-extrabold text-slate-900 pt-3 border-t border-slate-100">
+                <span>Total Estimate:</span>
+                <span id="labelFinalTotal" class="text-xl text-brand-600 font-black">$0.00</span>
+              </div>
+            </div>
+
+            <!-- Formatted WhatsApp Button -->
+            <div class="mt-6 space-y-2">
+              <button onclick="sendOrderViaWhatsApp()" class="w-full py-4 rounded-2xl bg-emerald-500 hover:bg-emerald-600 active:scale-95 text-white font-extrabold text-sm shadow-lg shadow-emerald-500/25 transition flex items-center justify-center gap-2">
+                <i data-lucide="message-circle" class="w-5 h-5 fill-white text-emerald-500"></i>
+                <span>Order Estimate via WhatsApp</span>
+              </button>
+              <p class="text-center text-[10.5px] text-slate-400">
+                No credit card needed! We verify items in person before cleaning.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="location" class="py-20 bg-white border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest bg-brand-50 px-3.5 py-1.5 rounded-full">Store & Service Radius</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Drop In or Send Us Your Location</h2>
+        <p class="text-slate-600 text-sm mt-2">Visit our flagship laundromat or share your current GPS location directly on WhatsApp for convenient pickup.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Left: Detailed Location Information -->
+        <div class="lg:col-span-5 bg-slate-50 p-7 sm:p-8 rounded-3xl border border-slate-200/90 flex flex-col justify-between space-y-6">
+          <div class="space-y-6">
+            
+            <!-- Address -->
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-base">AquaPure Flagship Care Center</h4>
+                <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                  244 Blue Horizon Boulevard, Corner of 5th Ave<br>
+                  Central District, Metro City 10004
+                </p>
+                <div class="mt-2 text-xs text-brand-600 font-semibold flex items-center gap-1.5">
+                  <i data-lucide="car" class="w-3.5 h-3.5"></i> 10 Dedicated Customer Parking Spots
+                </div>
+              </div>
+            </div>
+
+            <!-- Operating Hours -->
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center shrink-0">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div class="text-xs sm:text-sm">
+                <h4 class="font-bold text-slate-900 text-base">Pickup & Store Timings</h4>
+                <div class="mt-2 space-y-1 text-slate-600">
+                  <div class="flex justify-between gap-6">
+                    <span>Monday – Friday:</span>
+                    <strong class="text-slate-900">7:30 AM – 9:00 PM</strong>
+                  </div>
+                  <div class="flex justify-between gap-6">
+                    <span>Saturday:</span>
+                    <strong class="text-slate-900">8:00 AM – 8:00 PM</strong>
+                  </div>
+                  <div class="flex justify-between gap-6">
+                    <span>Sunday:</span>
+                    <strong class="text-slate-900">9:00 AM – 6:00 PM</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Radius -->
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                <i data-lucide="navigation" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-base">Delivery Coverage</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                  <strong>Zone 1 (0–6 km):</strong> Free pickup & return.<br>
+                  <strong>Zone 2 (6–12 km):</strong> $3 flat delivery fee.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Add / Send Location Action Helper -->
+          <div class="pt-4 border-t border-slate-200/80 bg-white p-4 rounded-2xl border">
+            <h5 class="text-xs font-bold text-slate-900 mb-1 flex items-center gap-1.5">
+              <i data-lucide="locate" class="w-4 h-4 text-emerald-600"></i> Want Pickup at Your Door?
+            </h5>
+            <p class="text-[11px] text-slate-500 mb-3">Share your live GPS pin or building name directly on WhatsApp:</p>
+            
+            <button onclick="sendLocationHelperWhatsApp()" class="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-sm transition">
+              <i data-lucide="message-circle" class="w-4 h-4 fill-white text-emerald-600"></i>
+              <span>Send My Address on WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Google Map Embed -->
+        <div class="lg:col-span-7 bg-white rounded-3xl border border-slate-200/90 shadow-sm overflow-hidden min-h-[420px] relative">
+          <iframe 
+            title="AquaPure Laundry Location Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528000654!2d-74.14448777178044!3d40.69763123330752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" 
+            class="w-full h-full min-h-[420px] border-0" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <!-- Floating Map Indicator -->
+          <div class="absolute top-4 right-4 bg-white/95 backdrop-blur px-3.5 py-2 rounded-xl border border-slate-200 shadow-md text-xs font-bold text-slate-800 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            Courier Routes Active
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="why-us" class="py-20 bg-slate-50 border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold text-aqua-600 uppercase tracking-widest bg-aqua-50 px-3.5 py-1.5 rounded-full">Quality Without Compromise</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Why Our Neighborhood Trusts AquaPure</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="bg-white p-7 rounded-3xl border border-slate-200/80 shadow-sm space-y-3">
+          <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center font-black">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">$1,000 Garment Guarantee</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Every garment is barcoded and inspected. In the unlikely case of shrinkage or damage, we provide prompt full compensation.
+          </p>
+        </div>
+
+        <div class="bg-white p-7 rounded-3xl border border-slate-200/80 shadow-sm space-y-3">
+          <div class="w-12 h-12 rounded-2xl bg-teal-100 text-teal-600 flex items-center justify-center font-black">
+            <i data-lucide="leaf" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Zero Harsh Chemical Odors</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Standard dry cleaners soak fabrics in harsh petroleum solvents. We use liquid silicone and biodegradable plant detergents that are baby and pet safe.
+          </p>
+        </div>
+
+        <div class="bg-white p-7 rounded-3xl border border-slate-200/80 shadow-sm space-y-3">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-black">
+            <i data-lucide="message-square" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Human WhatsApp Support</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            No robotic answering trees. Chat with our local store manager regarding special collar preferences, stain alerts, or driver notes.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Quick WhatsApp Consultation Banner -->
+      <div class="mt-12 p-8 rounded-3xl bg-gradient-to-r from-brand-900 via-brand-800 to-slate-900 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+        <div class="space-y-1.5 text-center md:text-left">
+          <span class="text-xs font-bold text-aqua-400 uppercase tracking-widest">Have a special garment?</span>
+          <h3 class="text-2xl font-black">Wedding dress, leather, or tricky stain?</h3>
+          <p class="text-slate-300 text-xs max-w-lg">Take a quick picture and send it to our fabric specialist on WhatsApp for a custom estimate.</p>
+        </div>
+        <button onclick="sendSpecialItemPhotoPrompt()" class="px-6 py-3.5 rounded-2xl bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-extrabold text-xs transition shadow-lg whitespace-nowrap active:scale-95 flex items-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4 fill-white text-whatsapp-500"></i>
+          <span>Chat With Specialist</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="faq" class="py-20 bg-white border-t border-slate-200/70">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-14">
+        <span class="text-xs font-bold text-brand-600 uppercase tracking-widest bg-brand-50 px-3.5 py-1.5 rounded-full">Common Queries</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Frequently Asked Questions</h2>
+        <p class="text-slate-600 text-sm mt-2">Everything you need to know about our laundry and WhatsApp ordering.</p>
+      </div>
+
+      <div class="space-y-3.5" id="faqAccordion">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item bg-slate-50 rounded-2xl border border-slate-200/80 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brand-600 transition">
+            <span class="text-sm">How does ordering via WhatsApp work?</span>
+            <i data-lucide="chevron-down" class="faq-chevron w-4 h-4 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs text-slate-600 border-t border-slate-200/40 pt-3 leading-relaxed">
+            When you adjust items on our Price Estimator and click "Order via WhatsApp", our website pre-fills your WhatsApp chat with your chosen garments and calculated total. You can then add your pickup address and time. Our manager confirms within 5 minutes!
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item bg-slate-50 rounded-2xl border border-slate-200/80 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brand-600 transition">
+            <span class="text-sm">When and how do I pay?</span>
+            <i data-lucide="chevron-down" class="faq-chevron w-4 h-4 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs text-slate-600 border-t border-slate-200/40 pt-3 leading-relaxed">
+            You do <strong>not</strong> need to pay online upfront. We weigh and inspect your garments in person. You can pay via Cash on Delivery, credit card at your doorstep, or instant payment link upon completion.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item bg-slate-50 rounded-2xl border border-slate-200/80 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brand-600 transition">
+            <span class="text-sm">Do I need to separate my laundry?</span>
+            <i data-lucide="chevron-down" class="faq-chevron w-4 h-4 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs text-slate-600 border-t border-slate-200/40 pt-3 leading-relaxed">
+            No! You can put all your everyday laundry in one bag. Our staff inspects each tag and categorizes clothes by color temperature and fabric sensitivity automatically.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item bg-slate-50 rounded-2xl border border-slate-200/80 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brand-600 transition">
+            <span class="text-sm">What if I am not home during pickup/delivery?</span>
+            <i data-lucide="chevron-down" class="faq-chevron w-4 h-4 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-xs text-slate-600 border-t border-slate-200/40 pt-3 leading-relaxed">
+            You can leave your laundry bag with your building's reception, concierge, or safe porch area. Simply inform us via WhatsApp, and the driver will send a photo confirmation upon pickup and drop-off.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 pt-16 pb-12 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-500 text-white flex items-center justify-center font-black">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <span class="font-black text-xl text-white">Aqua<span class="text-brand-400">Pure</span></span>
+          </div>
+          <p class="text-slate-400 leading-relaxed">
+            Modern fabric care designed for modern schedules. Non-toxic, crisp finishes, and instant WhatsApp customer service.
+          </p>
+          <div class="flex gap-2 text-white">
+            <span class="p-2 rounded-lg bg-slate-800 border border-slate-700"><i data-lucide="shield-check" class="w-4 h-4 text-brand-400"></i></span>
+            <span class="p-2 rounded-lg bg-slate-800 border border-slate-700"><i data-lucide="leaf" class="w-4 h-4 text-emerald-400"></i></span>
+            <span class="p-2 rounded-lg bg-slate-800 border border-slate-700"><i data-lucide="heart-handshake" class="w-4 h-4 text-pink-400"></i></span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Quick Links</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#services" class="hover:text-white transition">Our Services</a></li>
+            <li><a href="#pricing-calculator" class="hover:text-white transition">Estimate & WhatsApp Order</a></li>
+            <li><a href="#location" class="hover:text-white transition">Our Location & Hours</a></li>
+            <li><a href="#why-us" class="hover:text-white transition">Quality Guarantee</a></li>
+            <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Hours -->
+        <div>
+          <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Facility Hours</h4>
+          <div class="space-y-2 text-slate-400">
+            <p><strong class="text-white">Monday - Friday:</strong><br> 7:30 AM – 9:00 PM</p>
+            <p><strong class="text-white">Saturday:</strong><br> 8:00 AM – 8:00 PM</p>
+            <p><strong class="text-white">Sunday:</strong><br> 9:00 AM – 6:00 PM</p>
+          </div>
+        </div>
+
+        <!-- Contact details -->
+        <div>
+          <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Store Contact</h4>
+          <div class="space-y-2.5">
+            <p class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-400"></i>
+              <span>+1 (234) 567-890</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="message-circle" class="w-4 h-4 text-whatsapp-500"></i>
+              <span>WhatsApp: +1 (234) 567-890</span>
+            </p>
+            <p class="flex items-start gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-brand-400 shrink-0 mt-0.5"></i>
+              <span>244 Blue Horizon Blvd, Metro City</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-slate-500 gap-4">
+        <p>&copy; 2026 AquaPure Laundry & Dry Cleaners. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+          <span>•</span>
+          <a href="#" class="hover:text-slate-400">Terms of Care</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Sticky WhatsApp Button (with visual ping) -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center">
+    <a href="https://wa.me/1234567890?text=Hello%20AquaPure!%20I'd%20like%20to%20inquire%20about%20a%20laundry%20pickup." 
+       target="_blank" 
+       id="floatingWhatsAppBtn"
+       class="group relative flex items-center gap-2.5 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-4 py-3.5 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95">
+      
+      <!-- Ripple pulse effect behind -->
+      <span class="absolute -inset-1 rounded-full bg-emerald-400 opacity-40 animate-ping"></span>
+      
+      <i data-lucide="message-circle" class="w-6 h-6 fill-white text-emerald-500 relative z-10"></i>
+      <span class="hidden sm:inline relative z-10 text-xs tracking-wide">Chat on WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="fixed top-6 right-6 z-50 transform -translate-y-24 opacity-0 transition-all duration-300 bg-slate-900 text-white px-4 py-3 rounded-2xl shadow-xl flex items-center gap-2.5 text-xs font-semibold">
+    <i data-lucide="info" class="w-4 h-4 text-aqua-400"></i>
+    <span id="toastMessage">Notification</span>
+  </div>
+
+  <script>
+    // ==========================================
+    // CONFIGURATION: Set your WhatsApp phone number
+    // Format: Country code + digits only (e.g. "1234567890" or "447911123456")
+    // ==========================================
+    const WHATSAPP_PHONE_NUMBER = "1234567890";
+
+    // Service Catalog Database
+    const catalogData = {
+      wash_fold: [
+        { id: 'wf_regular', name: 'Everyday Laundry (per lb/kg)', price: 2.20, desc: 'Casual clothes, jeans, socks, basic tees', unit: 'lb' },
+        { id: 'wf_delicate', name: 'Delicates & Athletic Wear (per lb/kg)', price: 3.10, desc: 'Synthetic gym gear, silk blends, intimates', unit: 'lb' },
+        { id: 'wf_towel_bundle', name: 'Bath Towels Bundle (5x Heavy Towels)', price: 12.00, desc: 'Hot sanitized & ultra fluff dry', unit: 'bundle' }
+      ],
+      dry_clean: [
+        { id: 'dc_suit', name: '2-Piece Suit (Jacket + Pants)', price: 16.50, desc: 'Steam pressed on custom contoured hanger', unit: 'set' },
+        { id: 'dc_shirt', name: 'Dress Shirt (Laundered & Hand Pressed)', price: 4.25, desc: 'Crisp collar with stay inserts', unit: 'piece' },
+        { id: 'dc_dress', name: 'Evening / Formal Dress', price: 15.00, desc: 'Delicate stain spotting and gentle silicone cycle', unit: 'piece' },
+        { id: 'dc_jacket', name: 'Winter Jacket / Wool Overcoat', price: 21.00, desc: 'Deep lint cleanup and fiber protection', unit: 'piece' }
+      ],
+      iron_press: [
+        { id: 'ip_shirt', name: 'Steam Press Only: Shirt / Blouse', price: 2.75, desc: 'High-temp steam wrinkle elimination', unit: 'piece' },
+        { id: 'ip_trousers', name: 'Steam Press Only: Trousers / Slacks', price: 3.50, desc: 'Sharp front pleat crease restoration', unit: 'piece' },
+        { id: 'ip_tablecloth', name: 'Table Linens & Runners', price: 6.00, desc: 'Smooth dining fold with no fabric marks', unit: 'piece' }
+      ],
+      bedding: [
+        { id: 'bd_comforter', name: 'Down / Synthetic Duvet (King/Queen)', price: 24.00, desc: 'Oversized drum sanitization & anti-clumping', unit: 'item' },
+        { id: 'bd_blanket', name: 'Heavy Blanket / Quilt', price: 17.50, desc: 'Deep dust-mite removal and fresh scented wash', unit: 'item' },
+        { id: 'bd_bedsheet_set', name: 'Complete Bed Sheet Set (4 Pieces)', price: 14.00, desc: 'Fitted sheet + flat sheet + 2 pillowcases', unit: 'set' }
+      ]
+    };
+
+    // State Variables
+    let currentCategory = 'wash_fold';
+    let cart = {}; // Format: { [itemId]: quantity }
+    let isExpressSelected = false;
+
+    // Initialization on window load
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      renderItemsForCurrentCategory();
+      updateCartSummary();
+
+      // Mobile Menu Toggle
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+
+      // Close mobile drawer on link click
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    });
+
+    // Switch Category Tabs
+    function switchCategory(categoryKey) {
+      currentCategory = categoryKey;
+
+      // Update button styling
+      document.querySelectorAll('.category-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-600', 'text-white', 'shadow-sm');
+        btn.classList.add('text-slate-600');
+      });
+
+      const activeBtn = document.getElementById(`tab-${categoryKey}`);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-brand-600', 'text-white', 'shadow-sm');
+        activeBtn.classList.remove('text-slate-600');
+      }
+
+      renderItemsForCurrentCategory();
+    }
+
+    function selectCategoryTab(categoryKey) {
+      const calculatorSection = document.getElementById('pricing-calculator');
+      calculatorSection.scrollIntoView({ behavior: 'smooth' });
+      switchCategory(categoryKey);
+    }
+
+    // Render items inside selected category
+    function renderItemsForCurrentCategory() {
+      const container = document.getElementById('calculatorItemsList');
+      const items = catalogData[currentCategory] || [];
+
+      container.innerHTML = items.map(item => {
+        const qty = cart[item.id] || 0;
+        return `
+          <div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-slate-50/70 px-2 rounded-2xl transition">
+            <div class="space-y-0.5">
+              <div class="flex items-center gap-2">
+                <h4 class="font-bold text-slate-900 text-sm">${item.name}</h4>
+                <span class="text-xs font-bold px-2 py-0.5 rounded bg-brand-50 text-brand-700">
+                  $${item.price.toFixed(2)}
+                </span>
+              </div>
+              <p class="text-xs text-slate-500">${item.desc}</p>
+            </div>
+
+            <div class="flex items-center gap-3 self-end sm:self-auto">
+              <button onclick="modifyQuantity('${item.id}', -1)" aria-label="Decrease quantity" class="w-8 h-8 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold flex items-center justify-center transition active:scale-95">
+                <i data-lucide="minus" class="w-3.5 h-3.5"></i>
+              </button>
+              <span class="w-6 text-center text-sm font-extrabold text-slate-900">${qty}</span>
+              <button onclick="modifyQuantity('${item.id}', 1)" aria-label="Increase quantity" class="w-8 h-8 rounded-lg bg-brand-50 hover:bg-brand-100 text-brand-600 font-bold flex items-center justify-center transition active:scale-95">
+                <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      lucide.createIcons();
+    }
+
+    // Adjust item quantities
+    function modifyQuantity(itemId, change) {
+      const currentQty = cart[itemId] || 0;
+      const newQty = Math.max(0, currentQty + change);
+
+      if (newQty === 0) {
+        delete cart[itemId];
+      } else {
+        cart[itemId] = newQty;
+      }
+
+      renderItemsForCurrentCategory();
+      updateCartSummary();
+    }
+
+    // Toggle Express Speed option
+    function toggleExpressService() {
+      const checkbox = document.getElementById('expressToggle');
+      isExpressSelected = checkbox ? checkbox.checked : false;
+      updateCartSummary();
+    }
+
+    // Reset all items
+    function resetCalculatorCart() {
+      cart = {};
+      const checkbox = document.getElementById('expressToggle');
+      if (checkbox) checkbox.checked = false;
+      isExpressSelected = false;
+      renderItemsForCurrentCategory();
+      updateCartSummary();
+      showToast('Estimator has been reset.');
+    }
+
+    // Compute and Render Order Summary
+    function updateCartSummary() {
+      const summaryContainer = document.getElementById('cartSummaryContainer');
+      const badgeItemCount = document.getElementById('badgeItemCount');
+      const labelSubtotal = document.getElementById('labelSubtotal');
+      const expressFeeRow = document.getElementById('expressFeeRow');
+      const labelExpressFee = document.getElementById('labelExpressFee');
+      const labelFinalTotal = document.getElementById('labelFinalTotal');
+
+      // Flat items list
+      const allItems = Object.values(catalogData).flat();
+      let subtotal = 0;
+      let totalItemsCount = 0;
+      let selectedItemsList = [];
+
+      for (const [id, qty] of Object.entries(cart)) {
+        const itemObj = allItems.find(x => x.id === id);
+        if (itemObj && qty > 0) {
+          const itemCost = itemObj.price * qty;
+          subtotal += itemCost;
+          totalItemsCount += qty;
+          selectedItemsList.push({
+            name: itemObj.name,
+            qty: qty,
+            cost: itemCost
+          });
+        }
+      }
+
+      // Update badge
+      badgeItemCount.innerText = `${totalItemsCount} item${totalItemsCount === 1 ? '' : 's'}`;
+
+      // Update summary list
+      if (selectedItemsList.length === 0) {
+        summaryContainer.innerHTML = `<p class="text-slate-400 italic text-center py-6">Your order is empty. Select items to see your estimate.</p>`;
+      } else {
+        summaryContainer.innerHTML = selectedItemsList.map(item => `
+          <div class="flex justify-between items-center py-1 border-b border-slate-50 text-xs">
+            <span class="text-slate-700"><strong>${item.qty}x</strong> ${item.name}</span>
+            <span class="font-bold text-slate-900">$${item.cost.toFixed(2)}</span>
+          </div>
+        `).join('');
+      }
+
+      // Calculate Express Surcharge (25%)
+      const expressFee = isExpressSelected ? subtotal * 0.25 : 0;
+      const finalTotal = subtotal + expressFee;
+
+      // Update Labels
+      labelSubtotal.innerText = `$${subtotal.toFixed(2)}`;
+      
+      if (isExpressSelected && subtotal > 0) {
+        expressFeeRow.style.display = 'flex';
+        labelExpressFee.innerText = `+$${expressFee.toFixed(2)}`;
+      } else {
+        expressFeeRow.style.display = 'none';
+      }
+
+      labelFinalTotal.innerText = `$${finalTotal.toFixed(2)}`;
+    }
+
+    // Format WhatsApp Order Message and Redirect
+    function sendOrderViaWhatsApp() {
+      const allItems = Object.values(catalogData).flat();
+      const keys = Object.keys(cart);
+
+      let message = `*Hello AquaPure Laundry!* 🧺✨\nI would like to arrange a pickup based on this estimate:\n\n*Estimated Items:*`;
+      let subtotal = 0;
+
+      if (keys.length === 0) {
+        // Fallback if user clicked without items
+        message = `*Hello AquaPure Laundry!* 👋\nI would like to inquire about scheduling a laundry pickup for my address.\nPlease let me know your available timeslots today!`;
+      } else {
+        keys.forEach(id => {
+          const itemObj = allItems.find(x => x.id === id);
+          const qty = cart[id];
+          if (itemObj && qty > 0) {
+            const cost = itemObj.price * qty;
+            subtotal += cost;
+            message += `\n• ${itemObj.name} × ${qty} = $${cost.toFixed(2)}`;
+          }
+        });
+
+        const expressFee = isExpressSelected ? subtotal * 0.25 : 0;
+        const total = subtotal + expressFee;
+
+        if (isExpressSelected) {
+          message += `\n\n⚡ *Speed:* Same-Day Express (+25% = $${expressFee.toFixed(2)})`;
+        } else {
+          message += `\n\n⏱ *Speed:* Standard 24-48 Hours`;
+        }
+
+        message += `\n📍 *Doorstep Delivery:* FREE (within 6km)`;
+        message += `\n💰 *Total Estimate:* ~$${total.toFixed(2)}`;
+        message += `\n\nMy location / notes:\n(Please type your address or send location pin here)`;
+      }
+
+      const encodedUrl = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+      window.open(encodedUrl, '_blank');
+      showToast('Opening WhatsApp with your order...');
+    }
+
+    // Direct general WhatsApp button
+    function sendDirectWhatsAppGeneral() {
+      const text = `Hello AquaPure Laundry! I have a question about laundry pickup and services.`;
+      window.open(`https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+    }
+
+    // Address & Location Pin Helper
+    function sendLocationHelperWhatsApp() {
+      const text = `Hello AquaPure Laundry! Here is my address for doorstep laundry pickup:\n\n📍 Address:\n(Please attach Google Maps location or enter flat/street details)`;
+      window.open(`https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+    }
+
+    // Fabric Specialist WhatsApp Consultation
+    function sendSpecialItemPhotoPrompt() {
+      const text = `Hello AquaPure Specialist! I am attaching a picture of my garment for a cleaning consultation and custom price quote.`;
+      window.open(`https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${encodeURIComponent(text)}`, '_blank');
+    }
+
+    // FAQ Accordion Interaction
+    function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const chevron = button.querySelector('.faq-chevron');
+      const isHidden = content.classList.contains('hidden');
+
+      // Close others
+      document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+      document.querySelectorAll('.faq-chevron').forEach(i => i.classList.remove('rotate-180'));
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        chevron.classList.add('rotate-180');
+      }
+    }
+
+    // Toast Notification helper
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMessage = document.getElementById('toastMessage');
+      if (!toast || !toastMessage) return;
+
+      toastMessage.innerText = msg;
+      toast.classList.remove('-translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('-translate-y-24', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3200);
+    }
+  </script>
+</body>
+</html>
