@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noor Al Sharq Laundry | مغسلة نور الشرق - Abu Dhabi</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfeff',
+              100: '#cffafe',
+              200: '#a5f3fc',
+              300: '#67e8f9',
+              400: '#22d3ee',
+              500: '#00a8be', // Match flyer cyan-teal logo
+              600: '#0891b2',
+              700: '#0e7490',
+              800: '#155e75',
+              900: '#093644',
+            },
+            navy: {
+              800: '#111e38',
+              900: '#0a1224',
+              950: '#050a14',
+            },
+            whatsapp: {
+              500: '#25D366',
+              600: '#128C7E',
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Segoe UI', 'sans-serif'],
+            arabic: ['Tajawal', 'Cairo', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    .arabic-text { font-family: 'Tajawal', sans-serif; }
+    .water-bubble {
+      position: absolute;
+      border-radius: 9999px;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.85), rgba(34, 211, 238, 0.25) 70%, rgba(0, 168, 190, 0.4));
+      box-shadow: inset 0 2px 6px rgba(255,255,255,0.8), 0 8px 24px rgba(0, 168, 190, 0.2);
+      pointer-events: none;
+    }
+    @keyframes floatGentle {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-16px) rotate(4deg); }
+    }
+    .animate-float { animation: floatGentle 7s ease-in-out infinite; }
+    .animate-float-delayed { animation: floatGentle 9s ease-in-out 2.5s infinite; }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-brand-500 selection:text-white">
+
+  <!-- TOP PROMO & CALL BAR -->
+  <aside aria-label="Announcement" class="bg-navy-950 text-white text-xs border-b border-navy-900/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-col md:flex-row items-center justify-between gap-2.5">
+      <div class="flex items-center gap-2 text-center md:text-left">
+        <span class="inline-flex items-center gap-1 bg-brand-500/20 border border-brand-500/40 text-brand-300 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+          <span class="w-1.5 h-1.5 rounded-full bg-brand-400 animate-pulse"></span> Abu Dhabi
+        </span>
+        <span class="text-slate-300 font-medium text-[11px] sm:text-xs">
+          Behind ADNOC, Salam Street • <span class="text-brand-300 font-semibold">FREE Pickup & Delivery</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-3 sm:gap-5 text-slate-300 font-medium text-[11px] sm:text-xs">
+        <span class="hidden sm:flex items-center gap-1.5 text-slate-400">
+          <i data-lucide="clock" class="w-3.5 h-3.5 text-brand-400"></i> Sat–Thu: 8am–11pm | Fri: 2pm–11pm
+        </span>
+        <span class="hidden sm:inline text-slate-700">|</span>
+        <a href="tel:025464675" class="hover:text-brand-300 flex items-center gap-1.5 transition text-white">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-400"></i> 02 546 4675
+        </a>
+        <span class="text-slate-700">|</span>
+        <a href="https://wa.me/971569005236" target="_blank" class="hover:text-whatsapp-500 flex items-center gap-1 text-emerald-400 transition font-semibold">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 fill-emerald-400 text-emerald-400"></i> 056 900 5236
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- STRUCTURED MAIN NAVIGATION BAR -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-4">
+        
+        <!-- Brand Logo Block -->
+        <a href="#home" class="flex items-center gap-3 group shrink-0">
+          <div class="relative w-11 h-11 rounded-2xl bg-gradient-to-br from-brand-500 to-cyan-400 text-white flex items-center justify-center font-black shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform duration-200">
+            <svg class="w-7 h-7" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 75L40 28C42 23 48 23 50 28L78 75" stroke="white" stroke-width="12" stroke-linecap="round"/>
+              <path d="M48 24L78 76" stroke="#cffafe" stroke-width="10" stroke-linecap="round"/>
+              <circle cx="78" cy="28" r="7" fill="white"/>
+            </svg>
+          </div>
+          <div>
+            <div class="text-lg sm:text-xl font-black text-navy-950 leading-none tracking-tight uppercase flex items-center gap-1.5">
+              <span>NOOR AL SHARQ</span>
+              <span class="text-brand-500 font-extrabold text-sm sm:text-base">LAUNDRY</span>
+            </div>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-[9px] font-extrabold tracking-widest text-slate-400 uppercase">TOTAL SOLUTION</span>
+              <span class="w-1 h-1 rounded-full bg-slate-300"></span>
+              <span class="text-[11px] font-bold text-brand-700 arabic-text">مغسلة نور الشرق</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Segmented Pill-Style Navigation Center Bar -->
+        <nav aria-label="Main Navigation" class="hidden lg:flex items-center p-1.5 bg-slate-100/90 border border-slate-200/80 rounded-2xl shadow-inner">
+          <div class="flex items-center gap-1 text-xs font-bold tracking-wide">
+            
+            <a href="#home" class="nav-item group px-3.5 py-2 rounded-xl text-slate-600 hover:text-navy-950 hover:bg-white hover:shadow-sm transition-all duration-150 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-lg bg-slate-200/70 group-hover:bg-brand-50 text-slate-500 group-hover:text-brand-600 flex items-center justify-center transition-colors">
+                <i data-lucide="home" class="w-3.5 h-3.5"></i>
+              </span>
+              <span>Home</span>
+            </a>
+
+            <a href="#services" class="nav-item group px-3.5 py-2 rounded-xl text-slate-600 hover:text-navy-950 hover:bg-white hover:shadow-sm transition-all duration-150 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-lg bg-slate-200/70 group-hover:bg-brand-50 text-slate-500 group-hover:text-brand-600 flex items-center justify-center transition-colors">
+                <i data-lucide="shirt" class="w-3.5 h-3.5"></i>
+              </span>
+              <span>Services</span>
+            </a>
+
+            <a href="#pricing" class="nav-item group px-3.5 py-2 rounded-xl text-slate-600 hover:text-navy-950 hover:bg-white hover:shadow-sm transition-all duration-150 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-lg bg-slate-200/70 group-hover:bg-brand-50 text-slate-500 group-hover:text-brand-600 flex items-center justify-center transition-colors">
+                <i data-lucide="badge-percent" class="w-3.5 h-3.5"></i>
+              </span>
+              <span>Price List</span>
+            </a>
+
+            <a href="#pickup-delivery" class="nav-item group px-3.5 py-2 rounded-xl text-slate-600 hover:text-navy-950 hover:bg-white hover:shadow-sm transition-all duration-150 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-lg bg-slate-200/70 group-hover:bg-brand-50 text-slate-500 group-hover:text-brand-600 flex items-center justify-center transition-colors">
+                <i data-lucide="truck" class="w-3.5 h-3.5"></i>
+              </span>
+              <span>Pickup & Delivery</span>
+            </a>
+
+            <a href="#about" class="nav-item group px-3.5 py-2 rounded-xl text-slate-600 hover:text-navy-950 hover:bg-white hover:shadow-sm transition-all duration-150 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-lg bg-slate-200/70 group-hover:bg-brand-50 text-slate-500 group-hover:text-brand-600 flex items-center justify-center transition-colors">
+                <i data-lucide="info" class="w-3.5 h-3.5"></i>
+              </span>
+              <span>About</span>
+            </a>
+
+          </div>
+        </nav>
+
+        <!-- Right Side: Structured Action Controls -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          
+          <!-- Direct Telephone Badge -->
+          <a href="tel:025464675" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-navy-950 text-xs font-extrabold tracking-wide transition shadow-xs">
+            <span class="w-2 h-2 rounded-full bg-brand-500"></span>
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-600"></i>
+            <span>02 546 4675</span>
+          </a>
+
+          <!-- Primary WhatsApp Quick Booking Button -->
+          <a href="https://wa.me/971569005236?text=Hello%20Noor%20Al%20Sharq%20Laundry!%20I%20would%20like%20to%20schedule%20a%20pickup%20in%20Abu%20Dhabi." 
+             target="_blank" 
+             class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-black uppercase tracking-wider shadow-sm transition active:scale-95">
+            <i data-lucide="message-circle" class="w-4 h-4 fill-white text-emerald-600"></i>
+            <span class="hidden sm:inline">WhatsApp</span>
+            <span class="sm:hidden">Chat</span>
+          </a>
+
+          <!-- Structured Mobile Hamburger Button -->
+          <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="lg:hidden p-2.5 rounded-xl border border-slate-200 text-navy-950 bg-slate-50 hover:bg-slate-100 transition focus:outline-none">
+            <i data-lucide="menu" class="w-5 h-5" id="menuIconClosed"></i>
+            <i data-lucide="x" class="w-5 h-5 hidden" id="menuIconOpened"></i>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Structured Mobile Navigation Dropdown Card -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200/80 bg-slate-50/95 backdrop-blur-lg px-4 pt-3 pb-5 transition-all">
+      <div class="max-w-md mx-auto space-y-2">
+        
+        <a href="#home" class="mobile-nav-link flex items-center justify-between p-3 rounded-xl bg-white border border-slate-200/80 text-sm font-bold text-navy-950 hover:border-brand-400 shadow-xs transition">
+          <span class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center">
+              <i data-lucide="home" class="w-4 h-4"></i>
+            </span>
+            <span>Home</span>
+          </span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+        </a>
+
+        <a href="#services" class="mobile-nav-link flex items-center justify-between p-3 rounded-xl bg-white border border-slate-200/80 text-sm font-bold text-navy-950 hover:border-brand-400 shadow-xs transition">
+          <span class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center">
+              <i data-lucide="shirt" class="w-4 h-4"></i>
+            </span>
+            <span>Services & Garments</span>
+          </span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+        </a>
+
+        <a href="#pricing" class="mobile-nav-link flex items-center justify-between p-3 rounded-xl bg-white border border-slate-200/80 text-sm font-bold text-navy-950 hover:border-brand-400 shadow-xs transition">
+          <span class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center">
+              <i data-lucide="badge-percent" class="w-4 h-4"></i>
+            </span>
+            <span>Price List (AED)</span>
+          </span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+        </a>
+
+        <a href="#pickup-delivery" class="mobile-nav-link flex items-center justify-between p-3 rounded-xl bg-white border border-slate-200/80 text-sm font-bold text-navy-950 hover:border-brand-400 shadow-xs transition">
+          <span class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center">
+              <i data-lucide="truck" class="w-4 h-4"></i>
+            </span>
+            <span>Pickup & Delivery</span>
+          </span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+        </a>
+
+        <a href="#about" class="mobile-nav-link flex items-center justify-between p-3 rounded-xl bg-white border border-slate-200/80 text-sm font-bold text-navy-950 hover:border-brand-400 shadow-xs transition">
+          <span class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center">
+              <i data-lucide="info" class="w-4 h-4"></i>
+            </span>
+            <span>About Our Branch</span>
+          </span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
+        </a>
+
+        <!-- Mobile Drawer Action Buttons -->
+        <div class="grid grid-cols-2 gap-2 pt-2">
+          <a href="tel:025464675" class="py-3 rounded-xl bg-navy-950 text-white font-extrabold text-xs flex items-center justify-center gap-2 shadow-xs transition">
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-300"></i>
+            <span>02 546 4675</span>
+          </a>
+          <a href="https://wa.me/971569005236" target="_blank" class="py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs flex items-center justify-center gap-2 shadow-xs transition">
+            <i data-lucide="message-circle" class="w-4 h-4 fill-white text-emerald-600"></i>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="relative overflow-hidden pt-10 pb-16 lg:py-20 bg-gradient-to-b from-brand-50 via-white to-slate-50">
+    <div class="water-bubble w-32 h-32 top-8 left-[5%] opacity-60 animate-float"></div>
+    <div class="water-bubble w-20 h-20 bottom-12 right-[8%] opacity-50 animate-float-delayed"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-100 border border-brand-200 text-brand-800 text-xs font-extrabold uppercase tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-brand-600"></span>
+            OUR BRANCH • BEHIND ADNOC, SALAM STREET, ABU DHABI
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-navy-950 tracking-tight leading-[1.1]">
+            Total Solution For <br class="hidden sm:inline">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-cyan-500">
+              Laundry Needs
+            </span>
+          </h1>
+          <p class="text-base sm:text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 font-medium">
+            Professional care for daily Kanduras, Abayas, suits, blankets, shoes, and home fabrics. Fast service with free doorstep pickup & delivery in Abu Dhabi.
+          </p>
+
+          <!-- Delivery Van & Payment Methods -->
+          <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4 max-w-xl mx-auto lg:mx-0">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+                <i data-lucide="truck" class="w-6 h-6"></i>
+              </div>
+              <div class="text-left">
+                <div class="text-xs font-black text-navy-900 uppercase">FREE PICKUP & DELIVERY</div>
+                <div class="text-[11px] text-slate-500 font-medium">Behind ADNOC, Salam Street, Abu Dhabi</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-50 px-3 py-1.5 rounded-xl border border-slate-200">
+              <span class="text-[10px] font-extrabold text-slate-500 uppercase tracking-tighter">WE ACCEPT DEBIT & CREDIT</span>
+              <span class="text-xs font-black text-blue-800">VISA</span>
+              <span class="text-xs font-black text-red-600">MC</span>
+            </div>
+          </div>
+
+          <!-- Direct CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2">
+            <a href="https://wa.me/971569005236?text=Hi%20Noor%20Al%20Sharq!%20I'd%20like%20to%20request%20a%20laundry%20pickup%20in%20Abu%20Dhabi." target="_blank" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs uppercase tracking-wider shadow-md transition active:scale-95">
+              <i data-lucide="message-circle" class="w-4 h-4 fill-white text-emerald-600"></i> WhatsApp Pickup
+            </a>
+            <a href="#pricing" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-brand-500 hover:bg-brand-600 text-white font-extrabold text-xs uppercase tracking-wider shadow-md transition active:scale-95">
+              <i data-lucide="badge-percent" class="w-4 h-4"></i> View Price List
+            </a>
+            <a href="#location" class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-white hover:bg-slate-100 text-navy-900 border border-slate-200 font-extrabold text-xs uppercase tracking-wider transition">
+              <i data-lucide="map-pin" class="w-4 h-4 text-brand-600"></i> Store Location
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Promotional Card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md bg-white rounded-3xl p-6 sm:p-7 shadow-2xl border-2 border-brand-100 space-y-5">
+            
+            <div class="bg-gradient-to-br from-brand-600 to-navy-900 text-white rounded-2xl p-5 text-center shadow-md">
+              <div class="w-12 h-12 mx-auto rounded-2xl bg-white/10 flex items-center justify-center mb-2">
+                <i data-lucide="sparkles" class="w-6 h-6 text-brand-300"></i>
+              </div>
+              <h3 class="text-xl font-black uppercase tracking-tight">Professional Fabric Care</h3>
+              <p class="text-xs text-brand-100 mt-1">High hygiene standards, sanitized wash & steam finishing</p>
+            </div>
+
+            <!-- Quick Service Badges -->
+            <div class="grid grid-cols-3 gap-2 text-center">
+              <div class="p-2.5 rounded-xl bg-brand-50 border border-brand-100">
+                <i data-lucide="droplet" class="w-4 h-4 mx-auto text-brand-600 mb-1"></i>
+                <div class="text-[10px] font-bold text-navy-900">DRY CLEAN</div>
+              </div>
+              <div class="p-2.5 rounded-xl bg-brand-50 border border-brand-100">
+                <i data-lucide="waves" class="w-4 h-4 mx-auto text-brand-600 mb-1"></i>
+                <div class="text-[10px] font-bold text-navy-900">WASH</div>
+              </div>
+              <div class="p-2.5 rounded-xl bg-brand-50 border border-brand-100">
+                <i data-lucide="wind" class="w-4 h-4 mx-auto text-brand-600 mb-1"></i>
+                <div class="text-[10px] font-bold text-navy-900">DRY</div>
+              </div>
+              <div class="p-2.5 rounded-xl bg-brand-50 border border-brand-100">
+                <i data-lucide="flame" class="w-4 h-4 mx-auto text-brand-600 mb-1"></i>
+                <div class="text-[10px] font-bold text-navy-900">IRONING</div>
+              </div>
+              <div class="p-2.5 rounded-xl bg-brand-50 border border-brand-100">
+                <i data-lucide="box" class="w-4 h-4 mx-auto text-brand-600 mb-1"></i>
+                <div class="text-[10px] font-bold text-navy-900">FOLDING</div>
+              </div>
+              <div class="p-2.5 rounded-xl bg-brand-50 border border-brand-100">
+                <i data-lucide="truck" class="w-4 h-4 mx-auto text-brand-600 mb-1"></i>
+                <div class="text-[10px] font-bold text-navy-900">DELIVERY</div>
+              </div>
+            </div>
+
+            <!-- Urgent Service Info -->
+            <div class="bg-amber-50 border border-amber-200 p-3 rounded-2xl text-center">
+              <div class="text-xs font-black text-amber-900 uppercase flex items-center justify-center gap-1.5">
+                <i data-lucide="clock" class="w-4 h-4 text-amber-600"></i>
+                Urgent Service Available (خدمة مستعجلة)
+              </div>
+              <div class="text-[11px] text-amber-800 font-medium mt-0.5">Quick turnaround options available upon request</div>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500 font-medium">Direct Hotline:</span>
+              <a href="tel:025464675" class="font-black text-navy-900 hover:text-brand-600">02 546 4675</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="py-16 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-black text-brand-600 tracking-widest uppercase bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Our Services • خدماتنا</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-navy-950 mt-3 tracking-tight">Complete Professional Care</h2>
+        <p class="text-slate-600 text-sm mt-2">Every service listed on our menu is handled with specialized garment equipment and gentle detergents.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <!-- 1. Ironing -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:border-brand-400 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-brand-600 flex items-center justify-center mb-4">
+            <i data-lucide="flame" class="w-6 h-6"></i>
+          </div>
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-black text-navy-900 text-base">Ironing</h3>
+            <span class="arabic-text font-bold text-xs text-brand-700">كوي</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">Pristine hand steam pressing for Kanduras, shirts, trousers, and pleated fabrics.</p>
+        </div>
+
+        <!-- 2. Washing -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:border-brand-400 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-4">
+            <i data-lucide="waves" class="w-6 h-6"></i>
+          </div>
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-black text-navy-900 text-base">Washing</h3>
+            <span class="arabic-text font-bold text-xs text-brand-700">غسيل</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">Deep antibacterial water wash with premium softener for daily wear and linens.</p>
+        </div>
+
+        <!-- 3. Blanket Washing -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:border-brand-400 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-4">
+            <i data-lucide="bed" class="w-6 h-6"></i>
+          </div>
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-black text-navy-900 text-base">Blanket Washing</h3>
+            <span class="arabic-text font-bold text-xs text-brand-700">غسيل بطانيات</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">Dedicated heavy-capacity drums for single, double, and king comforters & duvets.</p>
+        </div>
+
+        <!-- 4. Dry Cleaning -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:border-brand-400 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-600 flex items-center justify-center mb-4">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-black text-navy-900 text-base">Dry Cleaning</h3>
+            <span class="arabic-text font-bold text-xs text-brand-700">تنظيف جاف</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">Safe fabric cleaning tailored for suits, blazers, delicate silks, and wool overcoats.</p>
+        </div>
+
+        <!-- 5. Carpet & Curtain Washing -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:border-brand-400 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center mb-4">
+            <i data-lucide="layers" class="w-6 h-6"></i>
+          </div>
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-black text-navy-900 text-base">Carpet & Curtains</h3>
+            <span class="arabic-text font-bold text-xs text-brand-700">غسيل سجاد وستائر</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">Fiber refresh and dust extraction for residential rugs, prayer carpets, and heavy drapes.</p>
+        </div>
+
+        <!-- 6. Shoes Washing -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:border-brand-400 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center mb-4">
+            <i data-lucide="footprints" class="w-6 h-6"></i>
+          </div>
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-black text-navy-900 text-base">Shoes Washing</h3>
+            <span class="arabic-text font-bold text-xs text-brand-700">غسيل أحذية</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">Sole restoration, mesh scrubbing, and deodorization for sneakers and sports shoes.</p>
+        </div>
+
+        <!-- 7. Wedding Dress Dry Cleaning -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:border-brand-400 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center mb-4">
+            <i data-lucide="heart" class="w-6 h-6"></i>
+          </div>
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-black text-navy-900 text-base">Wedding Dress</h3>
+            <span class="arabic-text font-bold text-xs text-brand-700">فستان زفاف</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">Delicate care for beads, embroidery, delicate laces, and ceremonial evening wear.</p>
+        </div>
+
+        <!-- 8. Express Washing -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:border-brand-400 hover:shadow-lg transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-4">
+            <i data-lucide="zap" class="w-6 h-6"></i>
+          </div>
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="font-black text-navy-900 text-base">Express Washing</h3>
+            <span class="arabic-text font-bold text-xs text-brand-700">غسيل سريع</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">Priority queue with swift return times for travel packing or sudden requirements.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLEAN STATIC PRICE LIST (AED) -->
+  <section id="pricing" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-black text-brand-600 tracking-widest uppercase bg-brand-100/70 px-3 py-1 rounded-full border border-brand-200">
+          Standard Menu Rates • قائمة الأسعار
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-navy-950 mt-3 tracking-tight">Price List (AED)</h2>
+        <p class="text-slate-600 text-sm mt-1">Direct rates from our official price hanger. For orders or questions, message or call us anytime.</p>
+      </div>
+
+      <!-- Controls: Category Filter + Instant Search -->
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+        
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-100">
+          <!-- Category Tabs -->
+          <div class="flex flex-wrap gap-2">
+            <button onclick="filterPriceCategory('all')" id="tab-all" class="price-tab-btn active px-4 py-2 rounded-xl text-xs font-black transition bg-brand-500 text-white shadow-sm">
+              All Items (الكل)
+            </button>
+            <button onclick="filterPriceCategory('wash_iron')" id="tab-wash_iron" class="price-tab-btn px-4 py-2 rounded-xl text-xs font-bold transition text-slate-600 hover:bg-slate-100">
+              Washing & Ironing (غسيل وكوي)
+            </button>
+            <button onclick="filterPriceCategory('dry_clean')" id="tab-dry_clean" class="price-tab-btn px-4 py-2 rounded-xl text-xs font-bold transition text-slate-600 hover:bg-slate-100">
+              Dry Cleaning (تنظيف جاف)
+            </button>
+            <button onclick="filterPriceCategory('iron_only')" id="tab-iron_only" class="price-tab-btn px-4 py-2 rounded-xl text-xs font-bold transition text-slate-600 hover:bg-slate-100">
+              Ironing Only (كوي فقط)
+            </button>
+          </div>
+
+          <!-- Live Search Bar -->
+          <div class="relative w-full md:w-64">
+            <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
+            <input type="text" id="priceSearchInput" oninput="handlePriceSearch()" placeholder="Search garment (e.g. Kandura, Suit)..." class="w-full pl-9 pr-3 py-2 text-xs rounded-xl border border-slate-200 focus:outline-none focus:border-brand-500 bg-slate-50">
+          </div>
+        </div>
+
+        <!-- Price Table -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs sm:text-sm">
+            <thead>
+              <tr class="border-b border-slate-200 text-slate-400 uppercase text-[11px] font-black tracking-wider">
+                <th class="py-3 px-3">Service Category</th>
+                <th class="py-3 px-3">Garment / Item</th>
+                <th class="py-3 px-3 text-right">الاسم بالعربية</th>
+                <th class="py-3 px-3 text-right">Price (AED)</th>
+              </tr>
+            </thead>
+            <tbody id="priceTableBody" class="divide-y divide-slate-100">
+              <!-- Dynamically populated via JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3 border-t border-slate-100">
+          <span>* All prices are in UAE Dirhams (AED). Special or oversized items priced upon inspection.</span>
+          <a href="https://wa.me/971569005236?text=Hello%20Noor%20Al%20Sharq!%20I%20have%20an%20inquiry%20about%20your%20price%20list." target="_blank" class="text-brand-600 hover:underline font-bold flex items-center gap-1">
+            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Ask about an unlisted item
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PICKUP & DELIVERY SECTION -->
+  <section id="pickup-delivery" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-black text-brand-600 tracking-widest uppercase bg-brand-50 px-3 py-1 rounded-full border border-brand-100">
+          Doorstep Service • خدمة الاستلام والتوصيل
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-navy-950 mt-3 tracking-tight">FREE Pickup & Delivery in Abu Dhabi</h2>
+        <p class="text-slate-600 text-sm mt-2">Skip the traffic. Our mobile delivery vans visit apartments and villas across the Salam Street area daily.</p>
+      </div>
+
+      <!-- 3-Step Pickup Workflow -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden group hover:border-brand-400 transition">
+          <div class="text-4xl font-black text-slate-200 absolute -right-2 -bottom-2 select-none group-hover:text-brand-200 transition">01</div>
+          <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-4 font-black text-lg">
+            <i data-lucide="message-square" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-black text-navy-900 mb-1">1. Contact Us</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Send a WhatsApp with your location pin or building number to <span class="text-emerald-600 font-bold">056 900 5236</span> or call <span class="font-bold text-navy-900">02 546 4675</span>.</p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden group hover:border-brand-400 transition">
+          <div class="text-4xl font-black text-slate-200 absolute -right-2 -bottom-2 select-none group-hover:text-brand-200 transition">02</div>
+          <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-4 font-black text-lg">
+            <i data-lucide="truck" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-black text-navy-900 mb-1">2. Doorstep Collection</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Our driver picks up your clothes directly from your flat or reception at a convenient time slot.</p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden group hover:border-brand-400 transition">
+          <div class="text-4xl font-black text-slate-200 absolute -right-2 -bottom-2 select-none group-hover:text-brand-200 transition">03</div>
+          <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-4 font-black text-lg">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-black text-navy-900 mb-1">3. Fresh Delivery & Payment</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">Items returned fresh, pressed, and hung. Pay conveniently by Cash or Card (VISA & MasterCard accepted).</p>
+        </div>
+      </div>
+
+      <!-- Quick Action Banner -->
+      <div class="bg-navy-950 text-white rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border border-navy-800">
+        <div class="space-y-2 text-center md:text-left">
+          <div class="inline-flex items-center gap-2 text-emerald-400 text-xs font-bold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Van active today
+          </div>
+          <h4 class="text-xl sm:text-2xl font-black">Schedule Your Free Pickup Today</h4>
+          <p class="text-xs text-slate-300 max-w-lg">Serving residential towers, offices, and apartments around Salam Street and neighboring Abu Dhabi areas.</p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+          <a href="https://wa.me/971569005236?text=Hello%20Noor%20Al%20Sharq!%20Please%20schedule%20a%20FREE%20pickup%20for%20my%20address:%20" target="_blank" class="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-md transition active:scale-95">
+            <i data-lucide="message-circle" class="w-4 h-4 fill-white text-emerald-600"></i>
+            <span>WhatsApp Pickup</span>
+          </a>
+          <a href="tel:025464675" class="px-5 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 border border-white/20 transition">
+            <i data-lucide="phone" class="w-4 h-4 text-brand-300"></i>
+            <span>Call 02 546 4675</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section id="about" class="py-16 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left: Image & Badge Showcase -->
+        <div class="lg:col-span-5 relative">
+          <div class="bg-gradient-to-br from-brand-500 to-navy-900 rounded-3xl p-1 shadow-2xl">
+            <div class="bg-white rounded-[22px] p-6 sm:p-8 space-y-6">
+              
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center font-black">
+                  <i data-lucide="shield-check" class="w-7 h-7"></i>
+                </div>
+                <div>
+                  <h3 class="font-black text-navy-950 text-lg">Noor Al Sharq Care</h3>
+                  <p class="text-xs text-slate-500">Fabric Hygiene & Attention to Detail</p>
+                </div>
+              </div>
+
+              <div class="space-y-4 text-xs text-slate-600 leading-relaxed">
+                <div class="flex items-start gap-3">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-600 mt-0.5 shrink-0"></i>
+                  <div>
+                    <strong class="text-navy-900">Expertise in Traditional Attire:</strong>
+                    Specialized starching and steam finishing for Kanduras, delicate care for Abayas, and crisp crease preservation for Ghutras.
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-600 mt-0.5 shrink-0"></i>
+                  <div>
+                    <strong class="text-navy-900">Sanitized Detergents & Softeners:</strong>
+                    Safe, high-grade washing agents that leave fabrics clean, fragrant, and gentle on sensitive skin.
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-600 mt-0.5 shrink-0"></i>
+                  <div>
+                    <strong class="text-navy-900">Bilingual Support (العربية & English):</strong>
+                    Friendly customer team ready to accommodate individual garment preferences.
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-slate-100 grid grid-cols-3 gap-2 text-center">
+                <div>
+                  <div class="text-xl font-black text-brand-600">100%</div>
+                  <div class="text-[10px] font-bold text-slate-500 uppercase">Fabric Safe</div>
+                </div>
+                <div>
+                  <div class="text-xl font-black text-brand-600">Fast</div>
+                  <div class="text-[10px] font-bold text-slate-500 uppercase">Turnaround</div>
+                </div>
+                <div>
+                  <div class="text-xl font-black text-brand-600">Free</div>
+                  <div class="text-[10px] font-bold text-slate-500 uppercase">Van Delivery</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Story & Mission -->
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-xs font-black text-brand-600 tracking-widest uppercase bg-brand-50 px-3 py-1 rounded-full border border-brand-100">
+            About Us • عن مغسلة نور الشرق
+          </span>
+          
+          <h2 class="text-3xl sm:text-4xl font-black text-navy-950 tracking-tight leading-tight">
+            Your Trusted Laundry Partner in Abu Dhabi
+          </h2>
+
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+            Welcome to <strong class="text-navy-900">Noor Al Sharq Laundry (مغسلة نور الشرق)</strong>. Situated behind the ADNOC service station on Salam Street, our branch serves residents and businesses with attentive garment and linen care.
+          </p>
+
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Our motto is <span class="font-bold text-brand-700">"TOTAL SOLUTION FOR LAUNDRY NEEDS"</span>. From everyday shirts and trousers to blankets, shoes, curtains, and delicate ceremonial dresses, each piece is handled with care and delivered back to your home.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <div class="bg-white p-3.5 rounded-xl border border-slate-200 text-xs shadow-sm">
+              <div class="font-black text-navy-900 flex items-center gap-1.5 mb-1">
+                <i data-lucide="map-pin" class="w-4 h-4 text-brand-600"></i> Salam Street Location
+              </div>
+              <p class="text-slate-500 text-[11px]">Located right behind the ADNOC service station with easy access.</p>
+            </div>
+            <div class="bg-white p-3.5 rounded-xl border border-slate-200 text-xs shadow-sm">
+              <div class="font-black text-navy-900 flex items-center gap-1.5 mb-1">
+                <i data-lucide="credit-card" class="w-4 h-4 text-brand-600"></i> Cash & Cards Accepted
+              </div>
+              <p class="text-slate-500 text-[11px]">Pay on delivery via Cash, VISA, or MasterCard.</p>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-wrap gap-4 items-center">
+            <a href="#pricing" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-black text-xs uppercase tracking-wider transition shadow-md shadow-brand-500/20">
+              <i data-lucide="badge-percent" class="w-4 h-4"></i> Browse Price List
+            </a>
+            <a href="#location" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white hover:bg-slate-100 text-navy-900 border border-slate-200 font-bold text-xs uppercase tracking-wider transition">
+              <i data-lucide="map-pin" class="w-4 h-4 text-brand-600"></i> View on Map
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STORE LOCATION & DIRECT CONTACT SECTION -->
+  <section id="location" class="py-16 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-black text-brand-600 tracking-widest uppercase bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Location & Contact</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-navy-950 mt-3 tracking-tight">Visit Our Branch or Call for Pickup</h2>
+        <p class="text-slate-600 text-sm mt-1">Conveniently located on Salam Street with free mobile van pickup across Abu Dhabi.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Contact Details from Flyer -->
+        <div class="lg:col-span-5 bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 flex flex-col justify-between space-y-6">
+          
+          <div class="space-y-5">
+            
+            <!-- Address -->
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-black text-navy-900 text-sm">Branch Address</h4>
+                <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                  <strong>Behind ADNOC Service Station, Salam Street</strong><br>
+                  Abu Dhabi – United Arab Emirates (U.A.E.)
+                </p>
+                <div class="text-[11px] text-brand-700 font-bold arabic-text mt-1">خلف محطة أدنوك - شارع السلام - أبوظبي</div>
+              </div>
+            </div>
+
+            <!-- Phone & Mobile Numbers -->
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                <i data-lucide="phone-call" class="w-5 h-5"></i>
+              </div>
+              <div class="text-xs">
+                <h4 class="font-black text-navy-900 text-sm">Call & WhatsApp Inquiries</h4>
+                <div class="mt-2 space-y-1.5">
+                  <div class="flex items-center gap-2">
+                    <span class="text-slate-500 font-medium">Telephone (Landline):</span>
+                    <a href="tel:025464675" class="font-black text-navy-900 hover:text-brand-600">02 546 4675</a>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-slate-500 font-medium">Mobile / WhatsApp 1:</span>
+                    <a href="https://wa.me/971569005236" target="_blank" class="font-black text-whatsapp-600 hover:underline">056 900 5236</a>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-slate-500 font-medium">Mobile / WhatsApp 2:</span>
+                    <a href="https://wa.me/971521602633" target="_blank" class="font-black text-whatsapp-600 hover:underline">052 160 2633</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Working Hours -->
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center shrink-0">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-black text-navy-900 text-sm">Working Hours</h4>
+                <p class="text-xs text-slate-600 mt-1">
+                  Saturday – Thursday: 8:00 AM – 11:00 PM<br>
+                  Friday: 2:00 PM – 11:00 PM
+                </p>
+              </div>
+            </div>
+
+            <!-- Payment Methods -->
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
+                <i data-lucide="credit-card" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-black text-navy-900 text-sm">Accepted Payment Methods</h4>
+                <p class="text-xs text-slate-600 mt-1">Cash on delivery, VISA, and MasterCard (Debit & Credit accepted on mobile card terminals).</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Quick Share Location Button -->
+          <div class="bg-white p-4 rounded-2xl border border-slate-200">
+            <h5 class="text-xs font-black text-navy-900 mb-1 flex items-center gap-1.5">
+              <i data-lucide="navigation" class="w-4 h-4 text-brand-600"></i> Need Doorstep Pickup?
+            </h5>
+            <p class="text-[11px] text-slate-500 mb-3">Send your building name or WhatsApp live location pin to our driver:</p>
+            <a href="https://wa.me/971569005236?text=Hello%20Noor%20Al%20Sharq!%20Here%20is%20my%20pickup%20address%20in%20Abu%20Dhabi:%20" target="_blank" class="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold flex items-center justify-center gap-2 shadow-sm transition">
+              <i data-lucide="message-circle" class="w-4 h-4 fill-white text-emerald-600"></i>
+              <span>Send Address on WhatsApp</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Abu Dhabi Salam Street Interactive Map -->
+        <div class="lg:col-span-7 bg-slate-100 rounded-3xl border border-slate-200 overflow-hidden relative min-h-[400px]">
+          <iframe 
+            title="Noor Al Sharq Laundry Location Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14519.824967389148!2d54.38048259999999!3d24.4786737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e66487e83fb83%3A0x8670876ca801fe1f!2sSheikh%20Zayed%20Bin%20Sultan%20St%2C%20Abu%20Dhabi!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae" 
+            class="w-full h-full min-h-[400px] border-0" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="absolute top-4 right-4 bg-white/95 backdrop-blur px-3 py-1.5 rounded-xl border border-slate-200 shadow-md text-xs font-bold text-navy-950 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+            Delivery Vans Active in Abu Dhabi
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy-950 text-slate-400 py-12 border-t border-navy-900 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-10 border-b border-navy-900">
+        
+        <div>
+          <div class="text-white font-black text-lg uppercase tracking-tight">
+            NOOR AL SHARQ <span class="text-brand-400">LAUNDRY</span>
+          </div>
+          <div class="text-xs font-bold text-brand-300 arabic-text mt-0.5">مغسلة نور الشرق</div>
+          <p class="text-slate-400 mt-3 leading-relaxed">
+            TOTAL SOLUTION FOR LAUNDRY NEEDS. Serving families and professionals across Abu Dhabi with quality washing, dry cleaning, ironing, and delivery.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold uppercase tracking-wider mb-3">Abu Dhabi Branch</h4>
+          <p class="text-slate-400 leading-relaxed">
+            Behind ADNOC, Salam Street<br>
+            Abu Dhabi, United Arab Emirates<br>
+            Landline: <strong>02 546 4675</strong><br>
+            Mobile: <strong>056 900 5236 / 052 160 2633</strong>
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold uppercase tracking-wider mb-3">Quick Navigation</h4>
+          <div class="flex flex-col gap-2">
+            <a href="#home" class="text-brand-300 hover:underline">Home</a>
+            <a href="#services" class="text-brand-300 hover:underline">Services</a>
+            <a href="#pricing" class="text-brand-300 hover:underline">Price List (AED)</a>
+            <a href="#pickup-delivery" class="text-brand-300 hover:underline">Pickup & Delivery</a>
+            <a href="#about" class="text-brand-300 hover:underline">About Us</a>
+            <a href="https://wa.me/971569005236" target="_blank" class="text-whatsapp-500 hover:underline">WhatsApp: 056 900 5236</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-[11px] text-slate-500">
+        <p>&copy; 2026 Noor Al Sharq Laundry. All rights reserved.</p>
+        <p class="arabic-text">حل شامل لجميع احتياجات الغسيل - أبوظبي</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <div class="fixed bottom-5 right-5 z-50">
+    <a href="https://wa.me/971569005236?text=Hello%20Noor%20Al%20Sharq%20Laundry!%20I%20would%20like%20to%20order%20pickup." 
+       target="_blank" 
+       class="group flex items-center gap-2.5 bg-whatsapp-500 hover:bg-whatsapp-600 text-white font-black px-4 py-3 rounded-full shadow-2xl transition hover:scale-105 active:scale-95">
+      <i data-lucide="message-circle" class="w-6 h-6 fill-white text-whatsapp-500"></i>
+      <span class="text-xs uppercase tracking-wider hidden sm:inline">WhatsApp Order</span>
+    </a>
+  </div>
+
+  <!-- JAVASCRIPT: STATIC PRICE DATA & SEARCH/FILTER -->
+  <script>
+    // Price data directly from door hanger
+    const priceMenu = [
+      // Washing with Ironing
+      { category: 'wash_iron', categoryName: 'Washing & Ironing', name: 'Kandura / Dishdasha', nameAr: 'كندورة', price: 4.00 },
+      { category: 'wash_iron', categoryName: 'Washing & Ironing', name: 'Shirt', nameAr: 'قميص', price: 3.00 },
+      { category: 'wash_iron', categoryName: 'Washing & Ironing', name: 'T-Shirt', nameAr: 'تي شيرت', price: 2.50 },
+      { category: 'wash_iron', categoryName: 'Washing & Ironing', name: 'Trousers / Jeans', nameAr: 'بنطلون', price: 3.50 },
+      { category: 'wash_iron', categoryName: 'Washing & Ironing', name: 'Abaya', nameAr: 'عباية', price: 6.00 },
+      { category: 'wash_iron', categoryName: 'Washing & Ironing', name: 'Suit (2 Pcs)', nameAr: 'بدلة', price: 10.00 },
+      { category: 'wash_iron', categoryName: 'Washing & Ironing', name: 'Jacket', nameAr: 'جاكيت', price: 6.00 },
+      { category: 'wash_iron', categoryName: 'Washing & Ironing', name: 'Ghutra / Shawl', nameAr: 'غترة', price: 2.50 },
+      { category: 'wash_iron', categoryName: 'Washing & Ironing', name: 'Bed Sheet (Single)', nameAr: 'شرشف سرير مفرد', price: 5.00 },
+      { category: 'wash_iron', categoryName: 'Washing & Ironing', name: 'Bed Sheet (Double)', nameAr: 'شرشف سرير مزدوج', price: 7.00 },
+      { category: 'wash_iron', categoryName: 'Washing & Ironing', name: 'Blanket (Small)', nameAr: 'بطانية صغيرة', price: 15.00 },
+      { category: 'wash_iron', categoryName: 'Washing & Ironing', name: 'Blanket (Big / King)', nameAr: 'بطانية كبيرة', price: 20.00 },
+
+      // Dry Cleaning
+      { category: 'dry_clean', categoryName: 'Dry Cleaning', name: 'Suit (2 Pcs)', nameAr: 'بدلة كاملة', price: 16.00 },
+      { category: 'dry_clean', categoryName: 'Dry Cleaning', name: 'Jacket / Blazer', nameAr: 'جاكيت', price: 10.00 },
+      { category: 'dry_clean', categoryName: 'Dry Cleaning', name: 'Evening Dress', nameAr: 'فستان سهرة', price: 18.00 },
+      { category: 'dry_clean', categoryName: 'Dry Cleaning', name: 'Wedding Dress', nameAr: 'فستان زفاف', price: 80.00 },
+      { category: 'dry_clean', categoryName: 'Dry Cleaning', name: 'Abaya (Delicate)', nameAr: 'عباية خاصة', price: 10.00 },
+      { category: 'dry_clean', categoryName: 'Dry Cleaning', name: 'Shoes Washing & Detailing', nameAr: 'غسيل أحذية', price: 18.00 },
+      { category: 'dry_clean', categoryName: 'Dry Cleaning', name: 'Overcoat / Winter Coat', nameAr: 'معطف شتوي', price: 22.00 },
+
+      // Ironing Only
+      { category: 'iron_only', categoryName: 'Ironing Only', name: 'Kandura / Dishdasha', nameAr: 'كندورة', price: 2.00 },
+      { category: 'iron_only', categoryName: 'Ironing Only', name: 'Shirt', nameAr: 'قميص', price: 1.50 },
+      { category: 'iron_only', categoryName: 'Ironing Only', name: 'T-Shirt', nameAr: 'تي شيرت', price: 1.25 },
+      { category: 'iron_only', categoryName: 'Ironing Only', name: 'Trousers / Jeans', nameAr: 'بنطلون', price: 1.50 },
+      { category: 'iron_only', categoryName: 'Ironing Only', name: 'Abaya', nameAr: 'عباية', price: 3.00 },
+      { category: 'iron_only', categoryName: 'Ironing Only', name: 'Suit (2 Pcs)', nameAr: 'بدلة', price: 6.00 },
+      { category: 'iron_only', categoryName: 'Ironing Only', name: 'Ghutra / Shawl', nameAr: 'غترة', price: 1.50 }
+    ];
+
+    let currentCategory = 'all';
+    let searchQuery = '';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      renderPriceTable();
+
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIconClosed = document.getElementById('menuIconClosed');
+      const menuIconOpened = document.getElementById('menuIconOpened');
+
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', () => {
+          const isHidden = mobileMenu.classList.toggle('hidden');
+          if (menuIconClosed && menuIconOpened) {
+            menuIconClosed.classList.toggle('hidden', !isHidden);
+            menuIconOpened.classList.toggle('hidden', isHidden);
+          }
+        });
+
+        // Auto close menu when clicking link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            if (menuIconClosed && menuIconOpened) {
+              menuIconClosed.classList.remove('hidden');
+              menuIconOpened.classList.add('hidden');
+            }
+          });
+        });
+      }
+    });
+
+    function filterPriceCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.price-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-500', 'text-white', 'shadow-sm', 'font-black');
+        btn.classList.add('text-slate-600', 'font-bold');
+      });
+
+      const activeBtn = document.getElementById(`tab-${cat}`);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-brand-500', 'text-white', 'shadow-sm', 'font-black');
+        activeBtn.classList.remove('text-slate-600', 'font-bold');
+      }
+
+      renderPriceTable();
+    }
+
+    function handlePriceSearch() {
+      searchQuery = document.getElementById('priceSearchInput').value.trim().toLowerCase();
+      renderPriceTable();
+    }
+
+    function renderPriceTable() {
+      const tbody = document.getElementById('priceTableBody');
+      const filtered = priceMenu.filter(item => {
+        const matchesCategory = currentCategory === 'all' || item.category === currentCategory;
+        const matchesSearch = !searchQuery || 
+          item.name.toLowerCase().includes(searchQuery) || 
+          item.nameAr.includes(searchQuery) || 
+          item.categoryName.toLowerCase().includes(searchQuery);
+        return matchesCategory && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = `
+          <tr>
+            <td colspan="4" class="py-8 text-center text-slate-400 italic">
+              No garments found matching "${searchQuery}". Please call or WhatsApp us for custom items!
+            </td>
+          </tr>
+        `;
+        return;
+      }
+
+      tbody.innerHTML = filtered.map(item => `
+        <tr class="hover:bg-slate-50/80 transition">
+          <td class="py-3 px-3">
+            <span class="inline-block px-2.5 py-0.5 rounded-md text-[10px] font-bold ${
+              item.category === 'wash_iron' ? 'bg-blue-50 text-blue-700 border border-blue-100' :
+              item.category === 'dry_clean' ? 'bg-teal-50 text-teal-700 border border-teal-100' :
+              'bg-amber-50 text-amber-700 border border-amber-100'
+            }">
+              ${item.categoryName}
+            </span>
+          </td>
+          <td class="py-3 px-3 font-extrabold text-navy-900">
+            ${item.name}
+          </td>
+          <td class="py-3 px-3 text-right arabic-text font-bold text-slate-700">
+            ${item.nameAr}
+          </td>
+          <td class="py-3 px-3 text-right font-black text-brand-600">
+            ${item.price.toFixed(2)} AED
+          </td>
+        </tr>
+      `).join('');
+    }
+  </script>
+</body>
+</html>
